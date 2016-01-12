@@ -48,6 +48,7 @@ Django REST framework offers their own REST api via browser:
 ##### Requests with httpie library:
 	http http://127.0.0.1:8000/snippets/
 	http http://127.0.0.1:8000/users/ Accept:text/html
+	http http://127.0.0.1:8000/users/ Accept:application/xml
 	http http://127.0.0.1:8000/snippets.json
 	http http://127.0.0.1:8000/users.api
 
