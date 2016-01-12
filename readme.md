@@ -4,23 +4,23 @@ Built with [django rest framework](http://www.django-rest-framework.org/)
 
 ### Prerequisites
 
-Libraries
+##### Libraries
 
 	virtualenv
 	pip
 	django
 
-Database
+##### Database
 
 This project use internal SQLite database, so there is no need for database setup. If you want to change database you can do it in settings.py file.
 
 ### Installation
 
-Create virtual enviroment
+##### Create virtual enviroment
 
 	virtualenv env
 
-Activate virtual enviroment
+##### Activate virtual enviroment
 
 on Windows:
 
@@ -31,45 +31,45 @@ on Unix:
 
 	source env/bin/activate
 
-Install dependencies:
+##### Install dependencies:
 
 	pip install -r requirements.txt
 
-Migrate database:
+##### Migrate database:
 
 	python manage.py migrate
 
 ### Usage:
 
-Run server:
+##### Run server:
 
 	python manage.py runsever <ip:port>	# example: python manage.py runserver 127.0.0.1:8000
 
-REST API:
+##### REST API:
 
-Django REST framework offers their own REST api in browser:
+##### Django REST framework offers their own REST api in browser:
 	http://127.0.0.1:8000/snippets/
 
-Requests with httpie library:
+##### Requests with httpie library:
 
 	http http://127.0.0.1:8000/snippets/
 	http http://127.0.0.1:8000/users/ Accept:text/html
 	http http://127.0.0.1:8000/snippets.json
 	http http://127.0.0.1:8000/users.api
 
-Using HTTP methods:
+##### Using HTTP methods:
 
 	http <GET | POST | PUT | DELETE | OPTIONS | HEAD	http://127.0.0.1:8000/snippets/
 
-Post using form data:
+##### Post using form data:
 
 	http --form POST http://127.0.0.1:8000/snippets/ code="print 123"
 
-Post using JSON:
+##### Post using JSON:
 
 	http --json POST http://127.0.0.1:8000/snippets/ code="print 456"
 
-Using authentication:
+##### Using authentication:
 
 	http -a matej:password POST http://127.0.0.1:8000/snippets/ code="print 789"
 
