@@ -40,6 +40,9 @@ on Unix:
 
 ##### Migrate database:
 	python manage.py migrate
+
+##### Create root user:
+	python manage.py createsuperuser
 <br>
 
 ### Usage:
