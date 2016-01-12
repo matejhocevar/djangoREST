@@ -15,6 +15,13 @@ This project use internal SQLite database, so there is no need for database setu
 
 ### Installation
 
+##### Clone project
+	git clone https://github.com/matoxxx/djangoREST.git
+
+Navigate to:
+
+	cd djangoREST
+
 ##### Create virtual enviroment
 	virtualenv env  
 
