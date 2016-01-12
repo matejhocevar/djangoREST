@@ -1,6 +1,5 @@
 # django REST
-Simple django rest application for demostration and learning purposes
-Built with [django rest framework](http://www.django-rest-framework.org/)
+Simple django rest application for demostration and learning purposes built with [django rest framework](http://www.django-rest-framework.org/)
 <br>
 
 ### Prerequisites
